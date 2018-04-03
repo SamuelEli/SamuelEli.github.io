@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.css">
+  <link href="css/fontawesome-all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>My First Searchable Webpage</title>
+
+</head>
+<body>
+
+  <nav class ="menu">
+    <ul>
+      <li><a href="#Home"> Home</a></li>
+      <li><a href="#About"> About Me</a></li>
+      <li><a href="#Contact"> Contact</a></li>
+    </ul>
+
+    <form class ="search-form">
+      <input type ="text" placeholder="search">
+      <button> Search</button>
+    </form>
+  </nav>
+
+
+<!-- sliding images -->
+  <div  id="Home">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/programmer1.jpg" alt="First slide" style="height: 800px; width :100%;">
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/programmer2.jpg" alt="Second slide" style="height: 800px; width : 100%;">
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/programmer3.jpg" alt="Third slide" style="height: 800px; width : 100%;">
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+<!-- table -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+  <h1>
+    Programming Languages
+</h1>
+ <table>
+    <tr>
+      <th>Html</th>
+      <th>Css</th>
+      <th class="money">javascript</th>
+      <th class="money">Php</th>
+    </tr>
+
+    <tr>
+      <td>E.E. Cummings</td>
+      <td>Tulips & Chimneys</td>
+      <td class="money">$2,000.00</td>
+      <td class="money">$2,642.50</td>
+    </tr>
+
+    <tr class="even">
+      <td>Charles d'Orleans</td>
+      <td>Poemes</td>
+      <td class="money"></td>
+      <td class="money">$5,866.00</td>
+    </tr>
+
+    <tr>
+      <td>T.S. Eliot</td>
+      <td>Poems 1909 - 1925</td>
+      <td class="money">$1,250.00</td>
+      <td class="money">$8,499.35</td>
+    </tr>
+
+    <tr class="even">
+      <td>Sylvia Plath</td>
+      <td>The Colossus</td>
+      <td class="money"></td>
+      <td class="money">$1031.72</td>
+    </tr>
+  </table>
+</div>
+
+<div class="col-md-6" style="padding-left: 150px; padding-bottom: 120px; padding-top: px;">
+  <h1>Programmer</h1>
+  <p>
+  There are around   10,000 living species of birds that inhabit   different ecosystems from the Arctic to the   Antarctic.
+  Many species undertake long distance   annual migrations, and many more perform shorter   irregular journeys.
+</p>
+</div>
+</div>
+</div>
+
+<!-- videos -->
+<div style=" padding-left: 150px;">
+  <iframe title="YouTube video player" class="youtube-player" type="text/html"
+  width="450" height="320" src="http://www.youtube.com/embed/W-Q7RMpINVo"
+  frameborder="0" allowFullScreen></iframe>
+
+  <iframe title="YouTube video player" class="youtube-player" type="text/html"
+  width="450" height="320" src="https://www.youtube.com/watch?v=VKo_lyvsZLg&t=19s"
+  frameborder="0" allowFullScreen></iframe>
+
+  <iframe title="YouTube video player" class="youtube-player" type="text/html"
+  width="450" height="320" src="https://www.youtube.com/watch?v=uEdyTlI3BAA&t=29s"
+  frameborder="0" allowFullScreen></iframe>
+
+
+<!-- about -->
+  <div class="row" id="About">
+    <div class="jumbotron">
+      <h1 class="display-4"> About Me</h1>
+      <div class="lead">
+        <p>
+          <dfn>The biggest way for me to stay motivated is</dfn> think of a program that intrigues you but is just out of reach of your abilities.
+          Do a step ladder of difficult programs that engage you.
+          My best example, the one that really got me going, was my messages app.
+          I knew python basics, but not enough to write anything significant.
+          So I thought of something: an app that would query a website to check the status of something, and then send me a SMS based upon the result.
+          From that, I had to learn how to interact with websites using JSON, and SMTP libraries for python.
+          After I reached that goal, <strong>I actually just kept building on it.</strong> Now I wanted a GUI, so I learned a framework.
+          I wanted to be able to interact with it via text message, so I learned IMAP libraries and parsing.
+          I wanted a history of queries, so I learned to use a really simple database.
+          I wanted to learn how to run it in the background, so I learned about services etc.
+          Find a project that interests you that you can't do... and do it. line by line.
+          Make it messy if you don't know where to start, and patch it up and streamline it later.</p>
+          <hr>
+          <p class="lead">
+            <em>more about me? please.....</em>
+            <input type="button" onclick="sayHello()" value="Click here" />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact form -->
+    <div class="container">
+    <div class ="header" id="Contact">
+      <h1 align ="center">
+        <font color ="blue"> C</font>
+        <font color ="red"> o</font>
+        <font color ="yellow"> n</font>
+        <font color ="blue"> t</font>
+        <font color ="green"> a</font>
+        <font color ="red"> c</font>
+        <font color ="yellow"> t</font>
+        <font> Us</font>&nbsp;&nbsp;
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco <a href="https://www.facebook.com/Ndanyuzwe">laboris</a> nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <em><p style="padding-left: 400px;">please, leave us a message below.</p></em>
+    </div>
+
+    <div class ="form">
+      <form>
+        <input type= "text" placeholder="Name" />
+        <input type= "text" placeholder="E-mail" />
+        <input type= "text" id="msg" placeholder="Message" />
+      </form>
+
+      <!-- icons -->
+      <p class="btn btn-primary" onclick="sendMessage()">send</p>
+      <div style="text-align: center;">
+        <a href="https://www.facebook.com/Ndanyuzwe"><i class="fab fa-facebook">facebook</i>/</a>
+        <a href="https://www.slack.com/"><i class="fab fa-slack">slack</i>/</a>
+        <a href="https://www.github.com/SamuelEli"><i class="fab fa-github">github</i>/</a>
+        <a href="#"><i class="fas fa-mobile">:097 4519026</i></a>
+      </div>
+    </div>
+  </div>
+
+<!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    <!--
+    function sayHello() {
+      alert("Thats All About Me!")
+    }
+    //-->
+
+    <!--
+    function sendMessage() {
+      alert("Message sent.")
+    }
+    //-->
+  </script>
+</body>
+</html>
